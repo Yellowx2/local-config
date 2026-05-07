@@ -1,14 +1,20 @@
 # ZSH
+
+WORDCHARS="*?[]~&;!#$%^(){}<>"
+
 ## Plugins
+
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-WORDCHARS="*?[]~&;!#$%^(){}<>"
 
 # Programs
+
 eval "$(starship init zsh)"
 
 # Environment variables
+
+export GIT_EDITOR = code
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
